@@ -59,7 +59,8 @@ end
 
 ## TRANSFORMERS
 
-default_transformer_X(model::KNNRegressor) = DataFrameToArrayTransformer(standardize=true)
+default_transformer_X(model::KNNRegressor) =
+    DataFrameToArrayTransformer(standardize=true)
 
 
 ## TRAINING AND PREDICTION METHODS
